@@ -1,0 +1,57 @@
+_meta_: {}
+bundle_root: /mnt/data/fkk/code_model/hecktor/hecktor22/work_dir_500/swinunet_0
+ckpt_path: $@bundle_root + '/model'
+data_file_base_dir: /mnt/data/fkk/DATASET/data_raw/
+data_list_file_path: /mnt/data/fkk/code_model/hecktor/hecktor22/preprocess_kk/4.json
+modality: ct
+fold: 0
+input_channels: 2
+output_classes: 3
+class_names: [tumor, lymph_node]
+class_index: null
+debug: true
+ckpt_save: true
+cache_rate: null
+roi_size: [192, 192, 192]
+auto_scale_allowed: true
+auto_scale_batch: true
+auto_scale_roi: false
+auto_scale_filters: false
+quick: false
+crop_ratios: [0.02, 0.48, 0.5]
+channels_last: true
+validate_final_original_res: true
+calc_val_loss: false
+amp: true
+log_output_file: null
+cache_class_indices: True
+early_stopping_fraction: 0.001
+determ: false
+num_images_per_batch: 1
+num_epochs: 300
+num_warmup_epochs: 3
+sigmoid: false
+resample: true
+resample_resolution: [1, 1, 1]
+crop_mode: ratio
+normalize_mode: range
+intensity_bounds: [-115.26852130031585, 119.07998538208008]
+num_epochs_per_validation: null
+num_epochs_per_saving: 1
+num_workers: 3
+num_steps_per_image: null
+num_crops_per_image: 1
+anisotropic_scales: false
+spacing_median: [0.9765620231628418, 0.9765620231628418, 3.2699999809265137]
+spacing_lower: [0.8286130452156067, 0.8286130452156067, 1.0]
+spacing_upper: [1.3671879768371582, 1.3671879768371582, 4.628749999999997]
+image_size_mm_median: [499.0, 499.0, 415.0]
+image_size_mm_90: [200, 200, 310]
+image_size: [600, 600, 1016]
+extra_modalities: {image2: pet}
+custom_data_transforms:
+- key: after_resample_transforms
+  path: .
+  transform:
+    _target_: hecktor_crop_neck_region.HecktorCropNeckRegion
+    box_size: [200, 200, 310]
