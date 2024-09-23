@@ -55,6 +55,5 @@ python path_to_nnUNetv2/nnUNet_predict.py -i /path/to/your/input_data -o /path/t
 - 根据实际硬件配置调整训练参数以优化性能。
 ## 联系方式
 如有疑问或建议，请通过以下方式联系：
-- Email: your_email@example.com
-- Issue Tracker: [GitHub Issue](https://github.com/YourUsername/YourProject/issues)
+- Email: fangkangkang@nefu.edu.cn
 感谢您的使用！
