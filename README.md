@@ -8,14 +8,13 @@
 https://github.com/xmuyzz/HECKTOR2022
 
 # 数据集
-
+https://hecktor.grand-challenge.org/Timeline/
 
 ## 项目简介
 本项目基于nnUNetv2框架，针对多模态CT/PET影像数据进行头颈部肿瘤的精确分割。通过定制训练器和网络结构，本项目旨在提高肿瘤分割的准确性和效率。
 
 
 # HECKTOR2022 Challenge Information
-https://hecktor.grand-challenge.org/Timeline/
 
 May 24th, 2022: Registration to the challenge opens June 1st, 2022 June 7th, 2022: Release of the training cases. August 1st, 2022: Release of the testing cases. August 26th to September 2nd, 2022: Challenge submissions. September 2nd, 2022: Paper abstract submisison deadline (intent to submit a paper). September 8th, 2022: Full paper submission deadline. September 8th to October 28th, 2022: Paper review phase. September 19-22, 2022: MICCAI event and release of challenge ranking.
 
